@@ -1,12 +1,12 @@
 import React from "react";
 
-const RedditPost = ({title}) => {
+const RedditPost = ({post}) => {
 
     return (
-        <>
-        <h4>{title}</h4>
-        <p>Hello!</p>
-        </>
+        <li>
+            <h4>{post.data.title}</h4>
+            <p>Hello!</p>            
+        </li>
     )
 }
 

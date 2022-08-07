@@ -4,13 +4,11 @@ import RedditPost from "./RedditPost";
 const RedditList = ({posts}) => {
 
     const PostNodes = posts.map((post, index) => {
-		return <RedditPost title={post.data.title} key={index} />;
+		return <RedditPost post={post} key={index} />;
 	});
 
     return (
-       <>
-        {PostNodes}
-        </>
+        <ul>{PostNodes}</ul>
     )
 }
 
